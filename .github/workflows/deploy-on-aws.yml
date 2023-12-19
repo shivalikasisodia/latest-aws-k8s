@@ -58,7 +58,6 @@ jobs:
       - name: Update kube config
         run: |-
           aws eks update-kubeconfig --region ap-south-1 --name multi-k8s 
-          kubectl apply -k "github.com/kubernetes-sigs/aws-efs-csi-driver/deploy/kubernetes/overlays/stable/?ref=release-1.7"
           kubectl get svc
 
       - name: Apply
