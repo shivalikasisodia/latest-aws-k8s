@@ -58,7 +58,6 @@ jobs:
       - name: Update kube config
         run: |-
           aws eks update-kubeconfig --region ap-south-1 --name latest-aws-k8s
-          kubectl get svc
 
       - name: Apply
         run: |-
